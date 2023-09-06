@@ -1,0 +1,13 @@
+{
+    "notions" :[
+            {"word" : "vérité" , "definition" : "Désigne la propriété d'une affirmation, d'une pensée, d'une croyance, d'une théorie, qui s'accorde à la fois à la réalité mais aussi avec elle même"}
+        ],
+    "mot_cles" : [
+        {"word" : "toujours", "definition" : "Adverbe de temps indiquant la permanance de l'idée dans la totalité du temps, d'une période ou sa répétition éternelle"}
+    ],
+    "citations" : 
+        [
+            {"auteur" : "Saint Thomas d'Aquin", "citation" : "«La vérité est l'adéquation de la pensée et de la chose»", "notion" : "vérité"}
+        ]
+    
+}

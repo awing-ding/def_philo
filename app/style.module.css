@@ -1,0 +1,10 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    margin-left: 5vw;
+}
+.keyword{
+    text-decoration: underline;
+    font-size: 1.1rem;
+}
