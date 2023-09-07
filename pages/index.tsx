@@ -3,24 +3,6 @@ import definition from '../app/data.json';
 import style from 'app/style.module.css';
 import { ReactNode } from 'react';
 
-enum word_type {
-    notion,
-    mot_cle,
-    definition,
-}
-
-function definition_writer(word : string, definition: string, type: word_type){
-    if (type == word_type.notion){
-        return (
-            <main>
-                <div>
-                    <p className={style.word}>{word}</p>
-                </div>
-            </main>
-        )
-    }
-}
-
 export default function definition_reader(){
     let notions = definition.notions;
     const notion_renderer : ReactNode = notions.map((notion) => {
