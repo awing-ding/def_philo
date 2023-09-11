@@ -1,7 +1,8 @@
-import { JsxElement } from 'typescript';
 import definition from '../app/data.json';
 import style from 'app/style.module.css';
 import { ReactNode } from 'react';
+import Link from 'next/link';
+
 
 enum word_type {
     notion,
@@ -46,14 +47,19 @@ export default function definition_reader(){
         );
     });
     return (
-        <main className={style.main}>
-            <h2>Définition de notions:</h2>
-            {notion_renderer}
-            <h2>Définition de mot clés:</h2>
-            {keyword_renderer}
-            <h2>Citations:</h2>
-            {citation_renderer}
-        </main>
+        <div> 
+            <nav>
+                <Link  href="/methodologie"> Méthodologie </Link>
+            </nav>
+            <main className={style.main}>
+                <h2>Définition de notions:</h2>
+                {notion_renderer}
+                <h2>Définition de mot clés:</h2>
+                {keyword_renderer}
+                <h2>Citations:</h2>
+                {citation_renderer}
+            </main>
+        </div>
     )
 }
 
