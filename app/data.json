@@ -12,14 +12,14 @@
         ],
     "methodo": 
         [
-            {"h1" : "Introduction", "ol" : 
+            {"h1" : "Introduction", 
+             "ol" : 
                 ["amorce + reprise du sujet",
                 "formulation d'une opinion spontanée",
                 "Questions contredisant cette opinion",
                 "«c'est ce qu'il conviendra de faire»"],
-                "p": ["  Dans 1984 d'Orwell, le personnage principal Winston Smith, travaille au ministère de la vérité où il réécrit l'histoire pour correspondre à la propagande du régime totalitaire, du parti. Ce dernier se rebelle contre le contrôle du parti et se lance dans une recherche de la vérité, faisant d'elle ce qu'il convient de préferer à l'illusion, notamment dans un monde totalitaire. On comprend non sans mal pourquoi en l'occurence la vérité est préférable au nom de l'autonomie de la pensée, mais faut il toujours préférer la vérité à l'illusion ?",
-                      "  Les hommes n'ont eut cesse, à travers la science, la philosophie, et même la religion de faire de la recherche de la vérité une nécessité. Saint Augustin décrit la vérité comme une lumière qui éclaire les âmes, faisant de la découverte de la vérité ce qui permet la liberté. Elle est même souvent présentée comme un devoir moral envers nous mêmes et envers les autres. Emmanuel Levinas pense que le mensonge rompt les relations de confiance et introduit une distance entre les individus. Il en est donc contraire à notre devoir d'illusionner l'autre par le mensonge."
-
+             "p": ["  Dans 1984 d'Orwell, le personnage principal Winston Smith, travaille au ministère de la vérité où il réécrit l'histoire pour correspondre à la propagande du régime totalitaire, du parti. Ce dernier se rebelle contre le contrôle du parti et se lance dans une recherche de la vérité, faisant d'elle ce qu'il convient de préferer à l'illusion, notamment dans un monde totalitaire. On comprend non sans mal pourquoi en l'occurence la vérité est préférable au nom de l'autonomie de la pensée, mais faut il toujours préférer la vérité à l'illusion ?",
+                   "  Les hommes n'ont eut cesse, à travers la science, la philosophie, et même la religion de faire de la recherche de la vérité une nécessité. Saint Augustin décrit la vérité comme une lumière qui éclaire les âmes, faisant de la découverte de la vérité ce qui permet la liberté. Elle est même souvent présentée comme un devoir moral envers nous mêmes et envers les autres. Emmanuel Levinas pense que le mensonge rompt les relations de confiance et introduit une distance entre les individus. Il en est donc contraire à notre devoir d'illusionner l'autre par le mensonge."
                 ]
             }
         ]
