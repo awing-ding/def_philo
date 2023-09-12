@@ -16,7 +16,7 @@ function NavBar(methodologie_list : Array<string>){
     return (
         <nav>
             {Menu_Point(methodologie_list)}
-            <Link href={"/index"}>Retour au menu</Link>
+            <Link href={"/"}>Retour au menu</Link>
         </nav>
     )
 }
