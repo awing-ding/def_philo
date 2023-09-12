@@ -4,24 +4,6 @@ import { ReactNode } from 'react';
 import Link from 'next/link';
 
 
-enum word_type {
-    notion,
-    mot_cle,
-    definition,
-}
-
-function definition_writer(word : string, definition: string, type: word_type){
-    if (type == word_type.notion){
-        return (
-            <main>
-                <div>
-                    <p className={style.word}>{word}</p>
-                </div>
-            </main>
-        )
-    }
-}
-
 export default function definition_reader(){
     let notions = definition.notions;
     const notion_renderer : ReactNode = notions.map((notion) => {
