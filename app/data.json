@@ -4,7 +4,10 @@
             {"word" : "vérité" , "definition" : "Désigne la propriété d'une affirmation, d'une pensée, d'une croyance, d'une théorie, qui s'accorde à la fois à la réalité mais aussi avec elle même"}
         ],
     "mot_cles" : [
-        {"word" : "toujours", "definition" : "Adverbe de temps indiquant la permanance de l'idée dans la totalité du temps, d'une période ou sa répétition éternelle"}
+        {"word" : "toujours", "definition" : "Adverbe de temps indiquant la permanance de l'idée dans la totalité du temps, d'une période ou sa répétition éternelle"},
+        {"word" : "sophiste", "definition" : "Beau parleur qui utilise toutes les ruses du langage pour persuader et tromper les autres"},
+        {"word" : "persuader", "definition" : "Argumenter en s'adressant aux sentiments"},
+        {"word" : "convaincre", "definition" : "Argumenter en s'adressant à la raison"}
     ],
     "citations" : 
         [
@@ -19,8 +22,9 @@
                 "Questions contredisant cette opinion",
                 "«c'est ce qu'il conviendra de faire»"],
              "p": ["  Dans 1984 d'Orwell, le personnage principal Winston Smith, travaille au ministère de la vérité où il réécrit l'histoire pour correspondre à la propagande du régime totalitaire, du parti. Ce dernier se rebelle contre le contrôle du parti et se lance dans une recherche de la vérité, faisant d'elle ce qu'il convient de préferer à l'illusion, notamment dans un monde totalitaire. On comprend non sans mal pourquoi en l'occurence la vérité est préférable au nom de l'autonomie de la pensée, mais faut il toujours préférer la vérité à l'illusion ?",
-                   "  Les hommes n'ont eut cesse, à travers la science, la philosophie, et même la religion de faire de la recherche de la vérité une nécessité. Saint Augustin décrit la vérité comme une lumière qui éclaire les âmes, faisant de la découverte de la vérité ce qui permet la liberté. Elle est même souvent présentée comme un devoir moral envers nous mêmes et envers les autres. Emmanuel Levinas pense que le mensonge rompt les relations de confiance et introduit une distance entre les individus. Il en est donc contraire à notre devoir d'illusionner l'autre par le mensonge."
-                ]
+                   "  Les hommes n'ont eut cesse, à travers la science, la philosophie, et même la religion de faire de la recherche de la vérité une nécessité. Saint Augustin décrit la vérité comme une lumière qui éclaire les âmes, faisant de la découverte de la vérité ce qui permet la liberté. Elle est même souvent présentée comme un devoir moral envers nous mêmes et envers les autres. Emmanuel Levinas pense que le mensonge rompt les relations de confiance et introduit une distance entre les individus. Il en est donc contraire à notre devoir d'illusionner l'autre par le mensonge.",
+                   "  Pourtant les hommes n'ont-ils pas parfois tendance à recourir à des illusions ou à des mécanisme d'autodéfense ? Ne leur arrive-t-il pas de fuir une réalité complexe dans des échappatoires illusoires ? Quant au mensonges, tous sont-ils moralement condamnables ? Enfin pourquoi faudrait-il nécessairement penser la relation entre illusion et vérite en terme d'opposition ? Les illusions ne peuvent-elles pas tenir lieu de palier intermédiaires dans la quête de la vérité ?"
+                   ]
             }
         ]
 }

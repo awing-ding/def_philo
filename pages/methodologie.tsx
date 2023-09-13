@@ -2,7 +2,7 @@ import content from '../app/data.json'
 import { ReadonlyURLSearchParams, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import 'app/style.module.css';
-import 'app/globals.css';
+//import 'app/globals.css';
 
 function Menu_Point(methodologie_list : Array<string>){
     return methodologie_list.map((point_title)=>{
