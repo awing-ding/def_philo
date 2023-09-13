@@ -1,6 +1,8 @@
 import content from '../app/data.json'
 import { ReadonlyURLSearchParams, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
+import 'app/style.module.css';
+import 'app/globals.css';
 
 function Menu_Point(methodologie_list : Array<string>){
     return methodologie_list.map((point_title)=>{
@@ -47,12 +49,12 @@ function Conditionnal_renderer(methodologie_list: string[], query_param : Readon
                         case 'h1':
                             wrapper.push(<h1 key={'h1'}>{content.methodo[i][property]}</h1>);
                             break;
-                        case 'h2':
+                        /*case 'h2':
                             wrapper.push(<h2 key={'h2'}>{content.methodo[i][property]}</h2>)
                             break;
                         case 'h3':
                             wrapper.push(<h3 key={'h3'}>{content.methodo[i][property]}</h3>)
-                            break;
+                            break;*/
                         case 'p':
                             if (content.methodo[i][property] instanceof Array) {
                                 wrapper.push(<div key={'div'}>{content.methodo[i][property].map((element) => {
