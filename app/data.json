@@ -1,9 +1,9 @@
 {
     "notions" :[
-            {"word": "illusion", "definition" : "Représentation de l'esprit, qui ne renvoit à rien de réel. Une perception qui ne correspond pas à la réalité objective, souvent contrastée avec la vérité"},
-            {"word" : "vérité" , "definition" : "Désigne la propriété d'une affirmation, d'une pensée, d'une croyance, d'une théorie, qui s'accorde à la fois à la réalité mais aussi avec elle même"}
+        {"word" : "vérité" , "definition" : "Désigne la propriété d'une affirmation, d'une pensée, d'une croyance, d'une théorie, qui s'accorde à la fois à la réalité mais aussi avec elle même"}
         ],
     "mot_cles" : [
+        {"word": "illusion", "definition" : "Représentation de l'esprit, qui ne renvoit à rien de réel. Une perception qui ne correspond pas à la réalité objective, souvent contrastée avec la vérité"},
         {"word" : "toujours", "definition" : "Adverbe de temps indiquant la permanance de l'idée dans la totalité du temps, d'une période ou sa répétition éternelle"},
         {"word" : "sophiste", "definition" : "Beau parleur qui utilise toutes les ruses du langage pour persuader et tromper les autres"},
         {"word" : "persuader", "definition" : "Argumenter en s'adressant aux sentiments"},
