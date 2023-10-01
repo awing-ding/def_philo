@@ -49,20 +49,20 @@
             "epreuve" : ["dissertation"]
         },
         {
-            "h1" : "Introduction d'explication",
+            "h1" : "Introduction d'explication de texte",
             "p" : "deux façons de procéder, le deux et trois étant interchangeable",
             "ol" : ["présentation & thème du texte",
                     "thèse du texte",
                     "problématique",
                     "plan du texte"],        
-            "epreuve" : ["explication"]
+            "epreuve" : ["explication de texte"]
         },
         {
-            "h1" : "Développement d'explication",
+            "h1" : "Développement d'explication de texte",
             "p" : "deux façons de procéder :",
             "ol" : ["Deux parties, explication du texte avec sous partie pour chaque partie du texte puis dimension critique, montre limites, problèmes, intérêts du texte.",
                     "Autant de parties que de parties de texte, explication d'une partie de texte et dimension critique de cette partie dans la même partie."],
-            "epreuve" : ["explication"]
+            "epreuve" : ["explication de texte"]
         }
     ]
 }

@@ -24,7 +24,7 @@ export default function definition_reader(){
     const citation_renderer : ReactNode = definition.citations.map((citation) => {
         return (
             <div key={citation.citation}>
-                <p className={style.citation}><span className={style.citation}>{citation.citation}</span><br /><span className={style.ouvrage}>  {citation.ouvrage}</span> — <span className={style.definition}>{citation.auteur}</span></p>
+                <p className={style.citation}><span className={style.citation}>{citation.citation}</span><span className={style.ouvrage}>{citation.ouvrage}</span> — <span className={style.definition}>{citation.auteur}</span></p>
             </div>
         );
     });
