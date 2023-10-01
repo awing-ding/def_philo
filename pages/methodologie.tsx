@@ -7,7 +7,7 @@ import style from 'app/style.module.css';
 type Epreuve = "dissertation" | "explication";
 type PointMethodo = {
    title : string,
-   epreuve : Epreuve
+   epreuve : Epreuve | any
 }
 
 function Menu_Point(methodologie_list : Array<PointMethodo>, epreuve : Epreuve){
@@ -33,7 +33,7 @@ function DefaultNav(){
 }
 
 function NavBar(methodologie_list : Array<PointMethodo>, query_param : ReadonlyURLSearchParams | null ){
-    let epreuve : Epreuve | null = query_param != null ? query_param.get('epreuve') : null;
+    let epreuve : Epreuve | null | any = query_param != null ? query_param.get('epreuve') : null;
     return (
         <nav>
             {epreuve == null ? DefaultNav() : Menu_Point(methodologie_list, epreuve)}
@@ -84,7 +84,8 @@ function Conditionnal_renderer(query_param : ReadonlyURLSearchParams | null) {
                         case 'p':
                             let j = 0;
                             if (content.methodo[i][property] instanceof Array) {
-                                wrapper.push(<div key={'div'}>{content.methodo[i][property].map((element) => {
+                                //@ts-ignore
+                                wrapper.push(<div key={'div'}>{content.methodo[i][property].map((element : string) => {
                                     j++;
                                     return (j > pm ? <p key={element}>{element}</p> : <p className={style.noDisplay}></p>);
                                 })}</div>);
