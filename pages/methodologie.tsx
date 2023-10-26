@@ -2,7 +2,7 @@ import content from '../app/data.json'
 import { ReadonlyURLSearchParams, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import style from 'app/style.module.css';
-//import 'app/globals.css';
+import 'app/globals.css';
 
 type Epreuve = "dissertation" | "explication";
 type PointMethodo = {
@@ -11,15 +11,22 @@ type PointMethodo = {
 }
 
 function Menu_Point(methodologie_list : Array<PointMethodo>, epreuve : Epreuve){
-    return methodologie_list.map((point_title)=>{
-            if (point_title.epreuve == epreuve) {
+    let points = methodologie_list.map((point_title)=>{
+        if (point_title.epreuve == epreuve) {
             const path = "/methodologie?title=" + point_title.title.toLowerCase()
             return (
                     // eslint-disable-next-line react/jsx-key
-                    <span><Link href={path} key={point_title.title}>{point_title.title}</Link><br /></span>
-                   )
-            }
-            });
+                    <Link href={path} key={point_title.title}>{point_title.title}<br /></Link>
+                )
+        }
+    });
+ 
+    return (
+        <div>
+            {points}
+            <Link href={"/"}>Retour au menu</Link>
+        </div>
+    )
 }
 
 function DefaultNav(){
@@ -28,6 +35,7 @@ function DefaultNav(){
         <div>
             <Link href={path+"dissertation"}>dissertation</Link><br />
             <Link href={path+"explication"}>explication</Link><br />
+            <Link href={"/"}>Retour au menu</Link>
         </div>
     )
 }
@@ -37,7 +45,6 @@ function NavBar(methodologie_list : Array<PointMethodo>, query_param : ReadonlyU
     return (
         <nav>
             {epreuve == null ? DefaultNav() : Menu_Point(methodologie_list, epreuve)}
-            <Link href={"/"}>Retour au menu</Link>
         </nav>
     )
 }

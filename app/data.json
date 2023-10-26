@@ -1,17 +1,21 @@
 {
     "notions" :[
         {"word" : "vérité" , "definition" : "Désigne la propriété d'une affirmation, d'une pensée, d'une croyance, d'une théorie, qui s'accorde à la fois à la réalité mais aussi avec elle même."},
-        {"word" : "art", "definition" : "1. (général) Au sens large l'art désigne la capacité de produire un objet (beau ou utile) grâce à un savoir faire, un métier, une habileté, un talent. \n2. (artistiquement) Tout type de production à visée esthétique dans laqeuelle s'exprime la pensée, les émotions, l'imagination de l'artiste."},
+        {"word" : "art", "definition" : "1. (général) Au sens large l'art désigne la capacité de produire un objet (beau ou utile) grâce à un savoir faire, un métier, une habileté, un talent. \n2. (artistiquement) Tout type de production à visée esthétique dans laquelle s'exprime la pensée, les émotions, l'imagination de l'artiste."},
         {"word" : "nature", "definition" : "Tout ce qui existe indépendemment de l'homme"}
     ],
     "mot_cles" : [
         {"word": "illusion", "definition" : "Représentation de l'esprit, qui ne renvoit à rien de réel. Une perception qui ne correspond pas à la réalité objective, souvent contrastée avec la vérité", "notion" : ["vérité"]},
-        {"word" : "toujours", "definition" : "Adverbe de temps indiquant la permanance de l'idée dans la totalité du temps, d'une période ou sa répétition éternelle", "notion" : ["vérité"]},
+        {"word" : "toujours", "definition" :  "1. Adverbe de temps indiquant la permanence de l'idée dans la totalité du temps, d'une période ou sa répétition éternelle\n 2. réfère à une illusion qui trompe une personne en croyant que quelque chose est éternelle.", "notion" : ["vérité"]},
         {"word" : "sophiste", "definition" : "Beau parleur qui utilise toutes les ruses du langage pour persuader et tromper les autres", "notion" : ["vérité"]},
         {"word" : "persuader", "definition" : "Argumenter en s'adressant aux sentiments", "notion" : ["vérité"]},
         {"word" : "convaincre", "definition" : "Argumenter en s'adressant à la raison", "notion" : ["vérité"]},
         {"word" : "refoulement", "definition" : "Mécanisme inconscient, non volontaire par lequel un individu rejette hors de sa conscience une représentation, un désir, un traumatisme intolérable si on en avait conscience", "notion" : ["vérité"]},
-        {"word" : "analogie", "definition" : "Rapprochement du rapport de deux choses avec le rapport de deux autres A/B = C/D", "notion" : ["vérité"]}
+        {"word" : "analogie", "definition" : "Rapprochement du rapport de deux choses avec le rapport de deux autres A/B = C/D", "notion" : ["vérité"]},
+        {"word" : "singulier", "definition" : "Ce qui est propre à un seul et le démarque de tout les autres.", "notion" : ["art"]},
+        {"word" : "particulier", "definition" : "Ce qui est vrai d'une partie d'un ensemble.", "notion" : ["art"]}, 
+        {"word" : "général", "definition" : "Ce qui est vrai d'une majorité des membres d'un ensemble", "notion" : ["art"]},
+        {"word" : "universel", "definition" : "Ce qui est vrai de toutes choses appartenant à un ensemble", "notion" : ["art"]}
     ],
     "citations" : 
     [

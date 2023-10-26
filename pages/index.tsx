@@ -1,14 +1,43 @@
 import definition from '../app/data.json';
+import '../app/globals.css';
 import style from 'app/style.module.css';
 import { ReactNode } from 'react';
 import Link from 'next/link';
 
-
+async function handleNotionSelection() {
+    let elements = document.querySelectorAll('main > div');
+    const notion_selector = document.getElementById('notion-select') as HTMLSelectElement;
+    const notion_selector_value = notion_selector.value;
+    elements.forEach(el => {
+        let element = el as HTMLElement;
+        if (element.getAttribute('data-notion') == notion_selector_value || notion_selector_value == 'none'){
+            element.style.display = 'inherit';
+        } else {
+            element.style.display = 'none';
+        }
+    });
+}
+function getOnlyNotion(){
+    let notions = [];
+    for (let i = 0; i < definition.notions.length; i++) {
+        notions.push(definition.notions[i].word);
+    }
+    return (
+        <select name="notion" id="notion-select" onChange={handleNotionSelection}>
+            <option value="none">Choisir une notion</option>
+            {notions.map((notion) => {
+                return (
+                    <option value={notion} key={notion}>{notion}</option>
+                )
+            })}
+        </select>
+    )
+}
 export default function definition_reader(){
     let notions = definition.notions;
     const notion_renderer : ReactNode = notions.map((notion) => {
         return (
-            <div key={notion.word}>
+            <div key={notion.word} data-notion={notion.word}>
                 <p className={style.word}><span className={style.keyword}>{notion.word.toUpperCase()}</span> : <span className={style.definition}>{notion.definition}</span></p>
             </div>
         );
@@ -16,14 +45,14 @@ export default function definition_reader(){
     let mots_cles = definition.mot_cles;
     const keyword_renderer : ReactNode = mots_cles.map((mot_cle) => {
         return (
-            <div key={mot_cle.word}>
+            <div key={mot_cle.word} data-notion={mot_cle.notion}>
                 <p className={style.word}><span className={style.keyword}>{mot_cle.word.toUpperCase()}</span> : <span className={style.definition}>{mot_cle.definition}</span></p>
             </div>
         );
     });
     const citation_renderer : ReactNode = definition.citations.map((citation) => {
         return (
-            <div key={citation.citation}>
+            <div key={citation.citation} data-notion={citation.notion}>
                 <p className={style.citation}><span className={style.citation}>{citation.citation}</span><br /><span className={style.ouvrage}>  {citation.ouvrage}</span> — <span className={style.definition}>{citation.auteur}</span></p>
             </div>
         );
@@ -33,6 +62,9 @@ export default function definition_reader(){
             <nav>
                 <Link  href="/methodologie"> Méthodologie </Link>
             </nav>
+
+            <br />
+            {getOnlyNotion()}
             <main className={style.main}>
                 <h2>Définition de notions:</h2>
                 {notion_renderer}
