@@ -10,10 +10,13 @@ async function handleNotionSelection() {
     const notion_selector_value = notion_selector.value;
     elements.forEach(el => {
         let element = el as HTMLElement;
-        if (element.getAttribute('data-notion') == notion_selector_value || notion_selector_value == 'none'){
+        let notionsMot = element.getAttribute('data-notion');
+        element.style.display = 'none';
+        notionsMot.split(',').forEach(notion => {
+            if (notion === notion_selector_value) element.style.display = 'inherit';
+        });
+        if (notion_selector_value == 'none'){
             element.style.display = 'inherit';
-        } else {
-            element.style.display = 'none';
         }
     });
 }
@@ -51,11 +54,22 @@ export default function definition_reader(){
         );
     });
     const citation_renderer : ReactNode = definition.citations.map((citation) => {
-        return (
-            <div key={citation.citation} data-notion={citation.notion}>
-                <p className={style.citation}><span className={style.citation}>{citation.citation}</span><br /><span className={style.ouvrage}>  {citation.ouvrage}</span> — <span className={style.definition}>{citation.auteur}</span></p>
-            </div>
-        );
+        if ("latin" in citation){
+            return (
+                <div key={citation.citation} data-notion={citation.notion}>
+                    <p className={style.citation}>
+                    <span className={style.latin}>{citation.latin}</span><br />
+                    <span className={style.citation}>{citation.citation}</span><br /><span className={style.ouvrage}>  {citation.ouvrage}</span> — <span className={style.definition}>{citation.auteur}</span></p>
+                </div>
+            );
+        }
+        else {
+            return (
+                <div key={citation.citation} data-notion={citation.notion}>
+                    <p className={style.citation}><span className={style.citation}>{citation.citation}</span><br /><span className={style.ouvrage}>  {citation.ouvrage}</span> — <span className={style.definition}>{citation.auteur}</span></p>
+                </div>
+            );
+        }
     });
     return (
         <div> 

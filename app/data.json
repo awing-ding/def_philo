@@ -2,7 +2,9 @@
     "notions" :[
         {"word" : "vérité" , "definition" : "Désigne la propriété d'une affirmation, d'une pensée, d'une croyance, d'une théorie, qui s'accorde à la fois à la réalité mais aussi avec elle même."},
         {"word" : "art", "definition" : "1. (général) Au sens large l'art désigne la capacité de produire un objet (beau ou utile) grâce à un savoir faire, un métier, une habileté, un talent. \n2. (artistiquement) Tout type de production à visée esthétique dans laquelle s'exprime la pensée, les émotions, l'imagination de l'artiste."},
-        {"word" : "nature", "definition" : "Tout ce qui existe indépendemment de l'homme"}
+        {"word" : "nature", "definition" : "1. Tout ce qui existe indépendemment de l'homme. 2. Ensemble du monde minéral, végétal ou animal formant une totalité organisée. 3. (essence) Ensemble propriété faisant d'une réalité ce qu'elle est."},
+        {"word" : "liberté", "definition" : "1. État d'une personne, d'un peuple, qui n'est pas prisonnier ni soumis à des contraintes arbitraires, ni à un maître ou tyran. 2. État de celui qui agit selon son libre-arbitre, c'est à dire selon son pouvoir de choisir, son pouvoir de décider entre plusieurs possibilités."},
+        {"word" : "devoir", "definition" : "Règle d'action qui définit une obligation"}
     ],
     "mot_cles" : [
         {"word": "illusion", "definition" : "Représentation de l'esprit, qui ne renvoit à rien de réel. Une perception qui ne correspond pas à la réalité objective, souvent contrastée avec la vérité", "notion" : ["vérité"]},
@@ -15,7 +17,17 @@
         {"word" : "singulier", "definition" : "Ce qui est propre à un seul et le démarque de tout les autres.", "notion" : ["art"]},
         {"word" : "particulier", "definition" : "Ce qui est vrai d'une partie d'un ensemble.", "notion" : ["art"]}, 
         {"word" : "général", "definition" : "Ce qui est vrai d'une majorité des membres d'un ensemble", "notion" : ["art"]},
-        {"word" : "universel", "definition" : "Ce qui est vrai de toutes choses appartenant à un ensemble", "notion" : ["art"]}
+        {"word" : "universel", "definition" : "Ce qui est vrai de toutes choses appartenant à un ensemble", "notion" : ["art"]},
+        {"word" : "contrainte", "definition" : "force ou pression qui agit sur moi et me force à agir d'une façon contraire à ma volonté", "notion" : ["liberté"]},
+        {"word" : "obligation", "definition" : "ce dans quoi je m'engage", "notion" : ["liberté"]},
+        {"word" : "nécessaire", "definition" : "ce qui ne peut être autrement", "notion" : ["liberté"]},
+        {"word" : "contingent", "definition" : "ce qui peut être autrement", "notion" : ["liberté"]},
+        {"word" : "essence", "definition" : "propriétés qui caracérisent une réalité et font d'elle ce qu'elle est", "notion" : ["nature", "liberté"]},
+        {"word" : "déterminisme", "definition" : "courant de pensée qui pense que tout ce qui arrive est le résultat de causes antérieures, une même cause entrainant toujours un même effet", "notion" : ["liberté"]},
+        {"word" : "fatalisme", "definition" : "courant de pensée qui pense que tout est écrit d'avance, par le destin", "notion" : ["liberté"]},
+        {"word" : "morale", "definition" : "Ensemble des règles de vie et de valeurs propre à un groupe, du latin mos, moris, la morale implique des devoirs, on dit qu'elle est prescriptive.", "notion" : ["devoir", "nature"]},
+        
+        {"word" : "", "definition" : "", "notion" : [""]}
     ],
     "citations" : 
     [
@@ -23,7 +35,19 @@
         {"auteur" : "Claude Bernard" , "citation" : "«La vérité scientifique sera toujours plus belle que les créations de notre imagination et que les illusions de notre ignorance.»", "ouvrage" : "Introduction à la médecine expérimentale", "notion": ["vérité"] },
         {"auteur" : "Kant", "citation" : "«Par le mensonge extérieur, l'homme se rend méprisable aux yeux d'autrui, mais, par le mensonge intérieur, ce qui est encore bien pis, il se rend méprisable à ses propres yeux et attente à la dignité de l'humanité en sa propre personne [...]. Le mensonge est abandon et pour ainsi dire négation de la dignité humaine»", "ouvrage" : "D'un prétendu droit de mentir par l'humanité", "notion" : ["vérité"]},
         {"auteur" : "Sartre", "citation" : "«La mauvaise foi est le propre de l'homme.»", "ouvrage" : "Huis Clos", "notion" : ["vérité"]}, 
-        {"auteur" : "(Inès) Sartre", "citation" : "«L'enfer c'est les autres.»", "ouvrage" : "Huis Clos", "notion" : ["vérité"]}
+        {"auteur" : "(Inès) Sartre", "citation" : "«L'enfer c'est les autres.»", "ouvrage" : "Huis Clos", "notion" : ["vérité"]},
+        {"auteur" : "Descartes", "citation" : "«La liberté de notre volonté se connait sans preuves par la seule expérience que nous en avons»", "ouvrage": "Les principes de la philosophie", "notion": ["liberté"]},
+        {"auteur" : "Sartre", "citation" : "«L'homme est condamné à être libre»", "ouvrage" : "l'être et le néant", "notion": ["liberté"]},
+        {"auteur" : "Freud", "citation" : "«Le moi n'est pas le maître dans sa propre maison»", "ouvrage" : "Introduction à la psychanalyse", "notion": ["liberté"]},
+        {"auteur" : "Spinoza", "citation" : "«Les hommes se trompent en ce qu'ils se croient libres et cette opinion consiste en cela seul qu'ils sont conscients de leurs actions, et ignorants des causes qui les déterminent. »", "latin": "Nempe falluntur homines, quod se liberos esse putant ; quae opinio in hoc solo consistit, quod suarum actionum sint conscii, et ignari causarum, a quibus determinantur.", "ouvrage" : "L'éthique II", "notion": ["liberté"]},
+        {"auteur" : "Heidegger", "citation" : "«Le saut de l'animal qui vit à l'homme qui dit est aussi grand sinon plus grand que celui de la pierre sans vie à l'être vivant»", "ouvrage" : "non cité", "notion": ["devoir", "nature"]},
+        {"auteur" : "Kant", "citation" : "«Agit toujours de telle sorte que la maxime de ton action puisse être érigée en morale universelle»", "ouvrage" : "non cité", "notion": ["vérité", "nature"]},
+        {"auteur" : "Kant", "citation" : "«Agis de telle sorte que tu traites l'humanité aussi bien dans ta personne que dans la personne de tout autre toujours en même temps comme une fin, et jamais simplement comme un moyen»", "ouvrage" : "non cité", "notion": ["vérité", "nature"]},
+        {"auteur" : "Kant", "citation" : "«Celui qui abat son chien parce qu'il n'est plus d'aucune utilité n'enfrain pas en vérité le devoir qu'il a envers son chien mais le devoir qu'il a envers l'humanité»", "ouvrage" : "Métaphysique des moeurs (1795)", "notion": ["nature"]},
+        {"auteur" : "Malebranche", "citation" : "«Ca crit mais ca ne sent pas»", "ouvrage" : "", "notion": ["nature"]},
+        {"auteur" : "Montaigne", "citation" : "«Il y a plus de différence de tel Homme à tel Homme que de tel Homme à tel bête»", "ouvrage" : "", "notion": ["nature"]},
+        {"auteur" : "Jeremy Bentham", "citation" : "«La question n'est pas peuvent-ils raisonner ni peuvent-ils parler mais peuvent-ils souffrir»", "ouvrage" : "L'introduction aux principes de la morale et de la législation", "notion": ["nature"]},
+        {"auteur" : "", "citation" : "«»", "ouvrage" : "", "notion": [""]}
     ],
     "methodo": 
     [
