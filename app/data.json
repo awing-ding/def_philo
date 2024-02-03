@@ -4,28 +4,32 @@
         {"word" : "art", "definition" : "1. (général) Au sens large l'art désigne la capacité de produire un objet (beau ou utile) grâce à un savoir faire, un métier, une habileté, un talent. \n2. (artistiquement) Tout type de production à visée esthétique dans laquelle s'exprime la pensée, les émotions, l'imagination de l'artiste."},
         {"word" : "nature", "definition" : "1. Tout ce qui existe indépendemment de l'homme. 2. Ensemble du monde minéral, végétal ou animal formant une totalité organisée. 3. (essence) Ensemble propriété faisant d'une réalité ce qu'elle est."},
         {"word" : "liberté", "definition" : "1. État d'une personne, d'un peuple, qui n'est pas prisonnier ni soumis à des contraintes arbitraires, ni à un maître ou tyran. 2. État de celui qui agit selon son libre-arbitre, c'est à dire selon son pouvoir de choisir, son pouvoir de décider entre plusieurs possibilités."},
-        {"word" : "devoir", "definition" : "Règle d'action qui définit une obligation"}
+        {"word" : "devoir", "definition" : "Règle d'action qui définit une obligation"},
+        {"word" : "travail", "definition" : "Ensemble d'activités permettant à l'Homme de porduire les biens et services nécessaire à la vie quotidienne. Cette production de biens et services implique la transformation consciente de la nature par l'usage de la technique. La production de biens et services est collectives ce qui implique une répartition des tâches. On parle de division sociale du travail lors d'une répartition entre métier et d'une division technique du travail lorsque la division se fait au sein du même métier."},
+        {"word" : "technique", "definition" : "1. (général) Tout type de savoir-faire permettant de remplir une activité, de fabriquer un objet de manière efficace et appropriée. 2. (bac) Ensemble des moyens artificiels en vue d'une fin intellectuelle (= méthode) ou matérielle (= savoir-faire + outils). Du grec τέχνη, technique savoir faire"}
     ],
     "mot_cles" : [
         {"word": "illusion", "definition" : "Représentation de l'esprit, qui ne renvoit à rien de réel. Une perception qui ne correspond pas à la réalité objective, souvent contrastée avec la vérité", "notion" : ["vérité"]},
         {"word" : "toujours", "definition" :  "1. Adverbe de temps indiquant la permanence de l'idée dans la totalité du temps, d'une période ou sa répétition éternelle\n 2. réfère à une illusion qui trompe une personne en croyant que quelque chose est éternelle.", "notion" : ["vérité"]},
-        {"word" : "sophiste", "definition" : "Beau parleur qui utilise toutes les ruses du langage pour persuader et tromper les autres", "notion" : ["vérité"]},
-        {"word" : "persuader", "definition" : "Argumenter en s'adressant aux sentiments", "notion" : ["vérité"]},
-        {"word" : "convaincre", "definition" : "Argumenter en s'adressant à la raison", "notion" : ["vérité"]},
-        {"word" : "refoulement", "definition" : "Mécanisme inconscient, non volontaire par lequel un individu rejette hors de sa conscience une représentation, un désir, un traumatisme intolérable si on en avait conscience", "notion" : ["vérité"]},
-        {"word" : "analogie", "definition" : "Rapprochement du rapport de deux choses avec le rapport de deux autres A/B = C/D", "notion" : ["vérité"]},
+        {"word" : "sophiste", "definition" : "Beau parleur qui utilise toutes les ruses du langage pour persuader et tromper les autres.", "notion" : ["vérité"]},
+        {"word" : "persuader", "definition" : "Argumenter en s'adressant aux sentiments.", "notion" : ["vérité"]},
+        {"word" : "convaincre", "definition" : "Argumenter en s'adressant à la raison.", "notion" : ["vérité"]},
+        {"word" : "refoulement", "definition" : "Mécanisme inconscient, non volontaire par lequel un individu rejette hors de sa conscience une représentation, un désir, un traumatisme intolérable si on en avait conscience.", "notion" : ["vérité"]},
+        {"word" : "analogie", "definition" : "Rapprochement du rapport de deux choses avec le rapport de deux autres A/B = C/D.", "notion" : ["vérité"]},
         {"word" : "singulier", "definition" : "Ce qui est propre à un seul et le démarque de tout les autres.", "notion" : ["art"]},
         {"word" : "particulier", "definition" : "Ce qui est vrai d'une partie d'un ensemble.", "notion" : ["art"]}, 
-        {"word" : "général", "definition" : "Ce qui est vrai d'une majorité des membres d'un ensemble", "notion" : ["art"]},
-        {"word" : "universel", "definition" : "Ce qui est vrai de toutes choses appartenant à un ensemble", "notion" : ["art"]},
+        {"word" : "général", "definition" : "Ce qui est vrai d'une majorité des membres d'un ensemble.", "notion" : ["art"]},
+        {"word" : "universel", "definition" : "Ce qui est vrai de toutes choses appartenant à un ensemble.", "notion" : ["art"]},
         {"word" : "contrainte", "definition" : "force ou pression qui agit sur moi et me force à agir d'une façon contraire à ma volonté", "notion" : ["liberté"]},
-        {"word" : "obligation", "definition" : "ce dans quoi je m'engage", "notion" : ["liberté"]},
-        {"word" : "nécessaire", "definition" : "ce qui ne peut être autrement", "notion" : ["liberté"]},
-        {"word" : "contingent", "definition" : "ce qui peut être autrement", "notion" : ["liberté"]},
-        {"word" : "essence", "definition" : "propriétés qui caracérisent une réalité et font d'elle ce qu'elle est", "notion" : ["nature", "liberté"]},
-        {"word" : "déterminisme", "definition" : "courant de pensée qui pense que tout ce qui arrive est le résultat de causes antérieures, une même cause entrainant toujours un même effet", "notion" : ["liberté"]},
-        {"word" : "fatalisme", "definition" : "courant de pensée qui pense que tout est écrit d'avance, par le destin", "notion" : ["liberté"]},
+        {"word" : "obligation", "definition" : "ce dans quoi je m'engage.", "notion" : ["liberté"]},
+        {"word" : "nécessaire", "definition" : "ce qui ne peut être autrement.", "notion" : ["liberté"]},
+        {"word" : "contingent", "definition" : "ce qui peut être autrement.", "notion" : ["liberté"]},
+        {"word" : "essence", "definition" : "propriétés qui caracérisent une réalité et font d'elle ce qu'elle est.", "notion" : ["nature", "liberté"]},
+        {"word" : "déterminisme", "definition" : "courant de pensée qui pense que tout ce qui arrive est le résultat de causes antérieures, une même cause entrainant toujours un même effet.", "notion" : ["liberté"]},
+        {"word" : "fatalisme", "definition" : "courant de pensée qui pense que tout est écrit d'avance, par le destin.", "notion" : ["liberté"]},
         {"word" : "morale", "definition" : "Ensemble des règles de vie et de valeurs propre à un groupe, du latin mos, moris, la morale implique des devoirs, on dit qu'elle est prescriptive.", "notion" : ["devoir", "nature"]},
+        {"word" : "outil", "definition" : "Objet technique qui agit sur la matière dépendément de la main.", "notion" : ["technique"]},
+        {"word" : "machine", "definition" : "Objet technique qui agit sur la matière de manière autonome, grâce à sa programmation et à son énergie.", "notion" : ["technique"]},
         
         {"word" : "", "definition" : "", "notion" : [""]}
     ],
@@ -44,10 +48,20 @@
         {"auteur" : "Kant", "citation" : "«Agit toujours de telle sorte que la maxime de ton action puisse être érigée en morale universelle»", "ouvrage" : "non cité", "notion": ["vérité", "nature"]},
         {"auteur" : "Kant", "citation" : "«Agis de telle sorte que tu traites l'humanité aussi bien dans ta personne que dans la personne de tout autre toujours en même temps comme une fin, et jamais simplement comme un moyen»", "ouvrage" : "non cité", "notion": ["vérité", "nature"]},
         {"auteur" : "Kant", "citation" : "«Celui qui abat son chien parce qu'il n'est plus d'aucune utilité n'enfrain pas en vérité le devoir qu'il a envers son chien mais le devoir qu'il a envers l'humanité»", "ouvrage" : "Métaphysique des moeurs (1795)", "notion": ["nature"]},
-        {"auteur" : "Malebranche", "citation" : "«Ca crit mais ca ne sent pas»", "ouvrage" : "", "notion": ["nature"]},
-        {"auteur" : "Montaigne", "citation" : "«Il y a plus de différence de tel Homme à tel Homme que de tel Homme à tel bête»", "ouvrage" : "", "notion": ["nature"]},
-        {"auteur" : "Jeremy Bentham", "citation" : "«La question n'est pas peuvent-ils raisonner ni peuvent-ils parler mais peuvent-ils souffrir»", "ouvrage" : "L'introduction aux principes de la morale et de la législation", "notion": ["nature"]},
+        {"auteur" : "Malebranche", "citation" : "«Ca crit mais ca ne sent pas»", "ouvrage" : "non cité", "notion": ["nature"]},
+        {"auteur" : "Montaigne", "citation" : "«Il y a plus de différence de tel Homme à tel Homme que de tel Homme à tel bête»", "ouvrage" : "non cité", "notion": ["nature"]},
+        {"auteur" : "Jeremy Bentham", "citation" : "«La question n'est pas peuvent-ils raisonner ni peuvent-ils parler mais peuvent-ils souffrir.»", "ouvrage" : "L'introduction aux principes de la morale et de la législation", "notion": ["nature"]},
+        {"auteur" : "Juif", "citation" : "«C'est à la sueur de ton visage que tu mangeras du pain.»", "ouvrage" : "Genèse 3:19", "notion": ["travail"]},
+        {"auteur" : "Karl Marx", "citation" : "«Ce qui distingue le plus mauvais architecte de l'abeille la plus experte c'est qu'il construit la cellule dans sa tête avant de la construire dans la ruche.»", "ouvrage" : "Das Kapital", "notion": [""]},
+        {"auteur" : "Platon", "citation" : "«[L'Homme] demeure nu, sans chaussures, sans couvertures, sans armes.»", "ouvrage" : "Protagoras, mythe de Prométhée", "notion": ["technique"]},
+        {"auteur" : "Aristote", "citation" : "«C'est parce qu'il est intelligent que l'homme a des mains.»", "ouvrage" : "non cité", "notion": ["technique"]},
+        {"auteur" : "Aristote", "citation" : "«La technique imite la nature.»", "ouvrage" : "non cité", "notion": ["technique"]},
+        {"auteur" : "Marcel Mauss", "citation" : "«Le corps est le premier et le plus naturel instrument Humain.»", "ouvrage" : "non cité", "notion": ["technique"]},
+        {"auteur" : "Cardon", "citation" : "«Nous fabriquons ces calculateurs, mais en retour ils nous construisent.»", "ouvrage" : "non cité", "notion": ["technique"]},
+        {"auteur" : "Simondon", "citation" : "«Conçues par les Hommes, elles ne les contre-disent pas. Conçues par les hommes elles ont donc une valeur humaine.»", "ouvrage" : "Du mode d'existence des objets techniques", "notion": ["technique"]},
+        {"auteur" : "", "citation" : "«»", "ouvrage" : "", "notion": [""]},
         {"auteur" : "", "citation" : "«»", "ouvrage" : "", "notion": [""]}
+
     ],
     "methodo": 
     [
@@ -87,9 +101,10 @@
         },
         {
             "h1" : "Développement d'explication",
-            "p" : "deux façons de procéder :",
+            "pm0" : 0,
             "ol" : ["Deux parties, explication du texte avec sous partie pour chaque partie du texte puis dimension critique, montre limites, problèmes, intérêts du texte.",
                     "Autant de parties que de parties de texte, explication d'une partie de texte et dimension critique de cette partie dans la même partie."],
+            "p": ["deux façons de procéder :", "L'explication doit définir les notions et se demander pourquoi l'auteur dit cela."],
             "epreuve" : ["explication"]
         }
     ]
