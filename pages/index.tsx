@@ -15,7 +15,7 @@ async function handleNotionSelection() {
         notionsMot.split(',').forEach(notion => {
             if (notion === notion_selector_value) element.style.display = 'inherit';
         });
-        if (notion_selector_value == 'none'){
+        if (notion_selector_value === 'none' || notion_selector_value === 'all'){
             element.style.display = 'inherit';
         }
     });
@@ -28,6 +28,7 @@ function getOnlyNotion(){
     return (
         <select name="notion" id="notion-select" onChange={handleNotionSelection}>
             <option value="none">Choisir une notion</option>
+            <option value="all">Afficher tout</option>
             {notions.map((notion) => {
                 return (
                     <option value={notion} key={notion}>{notion}</option>
@@ -41,7 +42,11 @@ export default function definition_reader(){
     const notion_renderer : ReactNode = notions.map((notion) => {
         return (
             <div key={notion.word} data-notion={notion.word}>
-                <p className={style.word}><span className={style.keyword}>{notion.word.toUpperCase()}</span> : <span className={style.definition}>{notion.definition}</span></p>
+                <p className={style.word}><span className={style.keyword}>{notion.word.toUpperCase()}</span> : <span className={style.definition}>{notion.definition.split(/\n/g).map((item)=>{
+                    return (
+                        <span key={item}>{item}<br /></span>
+                    )
+                })}</span></p>
             </div>
         );
     });
@@ -49,7 +54,11 @@ export default function definition_reader(){
     const keyword_renderer : ReactNode = mots_cles.map((mot_cle) => {
         return (
             <div key={mot_cle.word} data-notion={mot_cle.notion}>
-                <p className={style.word}><span className={style.keyword}>{mot_cle.word.toUpperCase()}</span> : <span className={style.definition}>{mot_cle.definition}</span></p>
+                <p className={style.word}><span className={style.keyword}>{mot_cle.word.toUpperCase()}</span> : <span className={style.definition}>{mot_cle.definition.split(/\n/g).map((item)=>{
+                    return (
+                        <span key={item}>{item}<br /></span>
+                    )
+                })}</span></p>
             </div>
         );
     });
@@ -58,7 +67,7 @@ export default function definition_reader(){
             return (
                 <div key={citation.citation} data-notion={citation.notion}>
                     <p className={style.citation}>
-                    <span className={style.latin}>{citation.latin}</span><br />
+                    <span className={style.latin}>«{citation.latin}»</span><br />
                     <span className={style.citation}>{citation.citation}</span><br /><span className={style.ouvrage}>  {citation.ouvrage}</span> — <span className={style.definition}>{citation.auteur}</span></p>
                 </div>
             );
