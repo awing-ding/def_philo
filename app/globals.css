@@ -1,7 +1,7 @@
 :root {
-    --nav-background-color: #6e4422;
-    --nav-lighter-background-color: #966c4a;
-    --nav-text-color: #f2e6d9;
+    --nav-background-color: #a8a8a8;
+    --nav-lighter-background-color: #c7c7c7;
+    --nav-text-color: #000000;
 }
 p {
     font-family: 'Garamond', serif;

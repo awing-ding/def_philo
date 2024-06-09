@@ -20,6 +20,7 @@ async function handleNotionSelection() {
         }
     });
 }
+
 function getOnlyNotion(){
     let notions = [];
     for (let i = 0; i < definition.notions.length; i++) {
@@ -37,6 +38,7 @@ function getOnlyNotion(){
         </select>
     )
 }
+
 export default function definition_reader(){
     let notions = definition.notions;
     const notion_renderer : ReactNode = notions.map((notion) => {
@@ -62,30 +64,14 @@ export default function definition_reader(){
             </div>
         );
     });
-    const citation_renderer : ReactNode = definition.citations.map((citation) => {
-        if ("latin" in citation){
-            return (
-                <div key={citation.citation} data-notion={citation.notion}>
-                    <p className={style.citation}>
-                    <span className={style.latin}>«{citation.latin}»</span><br />
-                    <span className={style.citation}>{citation.citation}</span><br /><span className={style.ouvrage}>  {citation.ouvrage}</span> — <span className={style.definition}>{citation.auteur}</span></p>
-                </div>
-            );
-        }
-        else {
-            return (
-                <div key={citation.citation} data-notion={citation.notion}>
-                    <p className={style.citation}><span className={style.citation}>{citation.citation}</span><br /><span className={style.ouvrage}>  {citation.ouvrage}</span> — <span className={style.definition}>{citation.auteur}</span></p>
-                </div>
-            );
-        }
-    });
-    return (
+    return ( 
         <div> 
             <nav>
-                <Link  href="/methodologie"> Méthodologie </Link>
+                <div>
+                    <Link  href="/methodologie"> Méthodologie </Link>
+                    <Link  href="/citations"> Citations </Link>
+                </div>
             </nav>
-
             <br />
             {getOnlyNotion()}
             <main className={style.main}>
@@ -93,8 +79,6 @@ export default function definition_reader(){
                 {notion_renderer}
                 <h2>Définition de mot clés:</h2>
                 {keyword_renderer}
-                <h2>Citations:</h2>
-                {citation_renderer}
             </main>
         </div>
     )
