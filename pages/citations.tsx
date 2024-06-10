@@ -3,7 +3,7 @@ import '../app/globals.css';
 import style from 'app/style.module.css';
 import { ReactNode } from 'react';
 import Link from 'next/link';
-import navbar from 'pages/navbar.tsx';
+import navbar from './navbar.tsx';
 
 
 interface Citation {

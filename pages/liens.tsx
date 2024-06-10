@@ -1,5 +1,5 @@
 import React from "react";
-import navbar from 'pages/navbar.tsx';
+import navbar from './navbar.tsx';
 import "app/globals.css";
 
 export default function Liens() {
