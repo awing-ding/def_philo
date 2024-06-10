@@ -35,8 +35,9 @@ function DefaultNav(){
         <div>
             <Link href={path+"dissertation"}>dissertation</Link><br />
             <Link href={path+"explication"}>explication</Link><br />
-            <Link href={"/"}>Retour au menu</Link>
+            <Link href="/">Définitions</Link>
             <Link href="/citation">Citations</Link>
+            <Link href="/liens">Liens</Link>
         </div>
     )
 }

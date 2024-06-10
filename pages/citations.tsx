@@ -3,6 +3,8 @@ import '../app/globals.css';
 import style from 'app/style.module.css';
 import { ReactNode } from 'react';
 import Link from 'next/link';
+import navbar from 'pages/navbar.tsx';
+
 
 interface Citation {
     auteur : string,
@@ -76,12 +78,7 @@ const citation_renderer : ReactNode = definition.citations.sort(sortCitationByAu
 export default function renderer(){
     return (
         <div>
-            <nav>
-                <div>
-                <Link href="/">Retour aux définitions</Link>
-                <Link href="/methodologie"> Méthodologie </Link>
-                </div>
-            </nav>
+            {navbar()}
             <h2>Citations:</h2>
             {selectAuthor()}
             {citation_renderer}

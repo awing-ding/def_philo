@@ -3,6 +3,8 @@ import '../app/globals.css';
 import style from 'app/style.module.css';
 import { ReactNode } from 'react';
 import Link from 'next/link';
+import navbar from 'pages/navbar.tsx';
+
 
 async function handleNotionSelection() {
     let elements = document.querySelectorAll('main > div');
@@ -66,12 +68,7 @@ export default function definition_reader(){
     });
     return ( 
         <div> 
-            <nav>
-                <div>
-                    <Link  href="/methodologie"> Méthodologie </Link>
-                    <Link  href="/citations"> Citations </Link>
-                </div>
-            </nav>
+            {navbar()}
             <br />
             {getOnlyNotion()}
             <main className={style.main}>
