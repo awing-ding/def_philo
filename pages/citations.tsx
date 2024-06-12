@@ -14,20 +14,54 @@ interface Citation {
     latin? : string
 }
 
-async function handleAuthorSelection() {
+function isDataPropertyConforming(element : HTMLElement) : boolean {
+    const author = element.getAttribute('data-auteur');
+    const notion = element.getAttribute('data-notion');
+
+    const authorSelector = document.getElementById('author-select') as HTMLSelectElement;
+    const notionSelector = document.getElementById('notion-select') as HTMLSelectElement;
+
+    return isConforming(authorSelector, author) && isConforming(notionSelector, notion);
+}
+
+function isConforming(Selector : HTMLSelectElement, value : string) : boolean {
+    let isConforming = false;
+    value.split(',').forEach((element) => {
+        if (Selector.value === element) {
+            isConforming = true;
+        }
+    });
+    return Selector.value === 'all' || Selector.value === 'none' || isConforming;
+}
+
+async function handleSelection() {
     let elements = document.querySelectorAll('main > div');
-    const author_selector = document.getElementById('author-select') as HTMLSelectElement;
-    const author_selector_value = author_selector.value;
+    const notion_selector = document.getElementById('notion-select') as HTMLSelectElement;
+    const notion_selector_value = notion_selector.value;
     elements.forEach(el => {
         let element = el as HTMLElement;
-        let author = element.getAttribute('data-auteur'); 
-        if (author_selector_value === 'none' || author_selector_value === 'all' || author === author_selector_value){
-            element.style.display = 'inherit';
-        }
-        else element.style.display = 'none';
+        let doesConform = isDataPropertyConforming(element);
+        element.style.display = doesConform ? 'inherit' : 'none';
     });
 }
 
+function getOnlyNotion(){
+    let notions = [];
+    for (let i = 0; i < definition.notions.length; i++) {
+        notions.push(definition.notions[i].word);
+    }
+    return (
+        <select name="notion" id="notion-select" onChange={handleSelection}>
+            <option value="none">Choisir une notion</option>
+            <option value="all">Afficher tout</option>
+            {notions.map((notion) => {
+                return (
+                    <option value={notion} key={notion}>{notion}</option>
+                )
+            })}
+        </select>
+    )
+}
 
 function selectAuthor(){
     let authors = [];
@@ -38,7 +72,7 @@ function selectAuthor(){
         }
     }
     return (
-        <select name="author" id="author-select" onChange={handleAuthorSelection}>
+        <select name="author" id="author-select" onChange={handleSelection}>
             <option value="none">Choisir un auteur</option>
             <option value="all">Afficher tout</option>
             {authors.map((author) => {
@@ -79,9 +113,12 @@ export default function renderer(){
     return (
         <div>
             {navbar()}
-            <h2>Citations:</h2>
-            {selectAuthor()}
-            {citation_renderer}
+            <main>
+                <h2>Citations:</h2>
+                {selectAuthor()}
+                {getOnlyNotion()}
+                {citation_renderer}
+            </main>
         </div> 
     )
 
