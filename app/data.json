@@ -133,7 +133,10 @@
         {"auteur" : "Dostoïevski", "citation" : "«L'art est pour l'Homme un besoin comme le manger et le boire» (via Maxence)", "ouvrage" : "non cité", "notion": ["art"]},
         {"auteur" : "Carl G. Jung", "citation" : "«Tant que vous n'aurez pas rendu l'inconscient conscient, il dirigera votre vie, et vous appelerez cela le destin. (via Maxence)", "ouvrage" : "non cité", "notion": ["liberté", "conscience", "inconscient"]},
         {"auteur" : "Oscar Wilde", "citation" : "«C'est lorsque l'Homme parle en son nom, que l'Homme est le moins lui-même. Donnez lui un masque et il vous dira la vérité» (via Maxence)", "ouvrage" : "non cité", "notion": ["vérité"]},
-        {"auteur" : "Dostoïevski", "citation" : "«Il vaut mieux être malheureux et connaître le pire, que d'être heureux dans un paradis de fou.» (via Maxence)", "ouvrage" : "non cité", "notion": ["bonheur"]}
+        {"auteur" : "Dostoïevski", "citation" : "«Il vaut mieux être malheureux et connaître le pire, que d'être heureux dans un paradis de fou.» (via Maxence)", "ouvrage" : "non cité", "notion": ["bonheur"]},
+        { "auteur" : "Spinoza", "citation" : "«Qui devient enragé par la morsure d'un chien, doit être excusé à la vérité et cependant on a le droit de l'étrangler.»", "ouvrage" : "Lettre à Oldenburg", "notion": ["justice", "liberté"]},
+        { "auteur" : "Proudhon", "citation" : "«La propriété, c'est le vol»", "ouvrage" : "Qu'est-ce que la propriété ?", "notion": ["devoir", "travail", "état", "justice"] }
+
     ],
     "methodo": 
     [
