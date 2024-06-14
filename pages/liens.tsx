@@ -16,6 +16,8 @@ export default function Liens() {
                 <li><a href="https://charles-de-gaulle-compiegne.ac-amiens.fr/matieres/philosophie/philoaccueilset.htm">Site de philo du lycée de Compiègne</a></li>
                 <li><a href="http://philosophia.fr/contributions/frise-chronologique-interactive-des-philosophes-dans-lhistoire/">Frise chronologique interactive des philosophes dans l&apos;histoire (petites vidéos)</a></li>
                 <li><a href="https://philo5.com/Les%20philosophes/LesPhilosophesChrono.htm">Frise avec description, pensée des philosophes et citations</a></li>
+                <li><a href="https://www.tiktok.com/@lacrimosophia">Lacrimosophia, compte TikTok qui vulgarise la philosophie (merci Maxence)</a></li>
+                <li><a href="https://open.spotify.com/show/7iK7Y2gFg5T1SqxplJqeJ2">Une chaine Spotify qui fait de très bons podcasts (merci Guillaume)</a></li>
             </ul>
         </div>
     )

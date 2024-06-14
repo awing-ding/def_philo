@@ -16,7 +16,7 @@
         {"word" : "raison", "definition" : "1. (épistém.) Capacité à faire des choix et des liens logiques. \n 2. (morale) faculté de l'esprit qui permet de dinstinguer le vrai du faux et le bien du mal. \n 3. (général) Faculté de former des concepts. \n 4. (logique) faculté de juger, de former des idées et de les relier logiquement entre elles au sein d'un raisonnement."},
         {"word" : "langage", "definition" : "1. (général) Système de signes et de règles permettant la communication ou l'expression. \n 2. (Philosophie) Capacité propre à certains êtres de créer, d'apprendre et d'utiliser un système de signes différenciés."},
         {"word" : "religion", "definition" : "1. (foi) Ensemble de croyances, une foi en un ou plusieurs êtres, fores ou principes supérieurs. \n 2. (institution) Institution qui organise les pratiques religieuses."},
-        {"word" : "temps", "definition" : ""}
+        {"word" : "temps", "definition" : "définition manquante"}
     
     ],
     "mot_cles" : [
@@ -126,8 +126,14 @@
         {"auteur" : "Schopenhauer", "citation" : "«Nous suivons le cours de notre vie avec un intérêt extraordinaire, avec mille soucis, mille précautions, aussi longtemps que possible, comme on souffle une bulle de savon, s'appliquant à la gonfler le plus possible et le plus longtemps, malgré la certitude qu'elle finira par éclater.»", "ouvrage" : "Le monde comme volonté et comme représentation (MCVR)", "notion": ["temps"]},
         {"auteur" : "Apollinaire", "citation" : "«Passent les jours et passent les semaines / Ni temps passé / Ni les amours reviennent / Sous le pont mirabeau coule la Seine»", "ouvrage" : "Alcool \"Le pont Mirabeau\"", "notion": ["temps"]},
         {"auteur" : "Pascal", "citation" : "«Tout ce que je connais est que je dois bientôt mourir ; mais ce que j'ignore le plus est cette mort même que je ne saurais éviter.»", "ouvrage" : "non cité", "notion": ["temps", "bonheur"]},
-        {"auteur" : "Rabelais", "citation" : "«Science sans conscience n'est que ruine de l'âme»", "ouvrage" : "Gargantua", "notion": ["science","conscience","raison","devoir", "technique"]}
-
+        {"auteur" : "Rabelais", "citation" : "«Science sans conscience n'est que ruine de l'âme»", "ouvrage" : "Gargantua", "notion": ["science","conscience","raison","devoir", "technique"]},
+        {"auteur" : "Aristote", "citation" : "«Être heureux ne signifie pas que tout est parfait. Cela signifie que vous avez décidé de regarder au-delà des imperfections.»", "ouvrage" : "non cité", "notion": ["bonheur"]},
+        {"auteur" : "Sénèque", "citation" : "« Celui qui cherche la sagesse est un sage, celui qui croit l'avoir trouvée est un fou. »", "ouvrage" : "non cité", "notion": ["raison", "science", "technique"]},
+        {"auteur" : "Nietzsche", "citation" : "«L'art, et rien que l'art ! C'est lui qui nous permet de vivre, qui nous persuade de vivre, qui nous stimule à vivre.» (via Maxence)", "ouvrage" : "non cité", "notion": ["art"]},
+        {"auteur" : "Dostoïevski", "citation" : "«L'art est pour l'Homme un besoin comme le manger et le boire» (via Maxence)", "ouvrage" : "non cité", "notion": ["art"]},
+        {"auteur" : "Carl G. Jung", "citation" : "«Tant que vous n'aurez pas rendu l'inconscient conscient, il dirigera votre vie, et vous appelerez cela le destin. (via Maxence)", "ouvrage" : "non cité", "notion": ["liberté", "conscience", "inconscient"]},
+        {"auteur" : "Oscar Wilde", "citation" : "«C'est lorsque l'Homme parle en son nom, que l'Homme est le moins lui-même. Donnez lui un masque et il vous dira la vérité» (via Maxence)", "ouvrage" : "non cité", "notion": ["vérité"]},
+        {"auteur" : "Dostoïevski", "citation" : "«Il vaut mieux être malheureux et connaître le pire, que d'être heureux dans un paradis de fou.» (via Maxence)", "ouvrage" : "non cité", "notion": ["bonheur"]}
     ],
     "methodo": 
     [
